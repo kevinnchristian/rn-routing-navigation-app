@@ -4,6 +4,11 @@
     "slug": "rn-routing-navigation-app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "plugins": [
+      [
+        "expo-notifications"
+      ]
+    ],
     "icon": "",
     "userInterfaceStyle": "light",
     "splash": {
