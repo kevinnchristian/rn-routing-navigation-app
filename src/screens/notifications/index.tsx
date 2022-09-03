@@ -17,8 +17,9 @@ import styles from './style';
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
+    shouldPlaySound: true,
+    shouldSetBadge: true,
+    handleShowAlert: true,
   })
 });
 
@@ -85,6 +86,8 @@ const schedulePushNotification = async () => {
       title: 'Push notification',
       body: "I'm notification",
       data: { result: 'Anything' },
+      sound: '../../src/assets/sounds/notifications.wav',
+      vibrate: [0, 250, 250, 250],
     },
     trigger: { seconds: 2 }
   });
