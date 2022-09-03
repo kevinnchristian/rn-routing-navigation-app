@@ -1,14 +1,11 @@
-import {
-  View,
-  Text,
-} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
-import HomeScreen from './screens/home';
-import CameraScreen from './screens/camera';
-import MapsScreen from './screens/maps';
+import HomeScreen from '../screens/home';
+import CameraScreen from '../screens/camera';
+import MapsScreen from '../screens/maps';
+import NotificationsScreen from '../screens/notifications';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -60,6 +57,21 @@ export default function BottomNavigation() {
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons
                 name='location-on'
+                color={color}
+                size={size}
+              />
+            )
+          }}
+        />
+
+        <Tab.Screen
+          name='Notifications'
+          component={NotificationsScreen}
+          options={{
+            tabBarLabel: 'Notifications',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons
+                name='circle-notifications'
                 color={color}
                 size={size}
               />

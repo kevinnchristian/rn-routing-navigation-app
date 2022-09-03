@@ -16,16 +16,16 @@ import styles from './style';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    handleShowAlert: true,
+    shouldShowAlert: true,
     shouldPlaySound: false,
     shouldSetBadge: false,
-    shouldShowAlert: false,
   })
 });
 
 export default function NotificationsScreen() {
   const [expoToken, setExpoToken] = useState<string | undefined>('');
   const [notification, setNotification] = useState<any>(false);
+  const [bodyNotification, setBodyNotification] = useState<object>();
 
   const notificationListener = useRef<any>();
   const responseListener = useRef<any>();
@@ -41,7 +41,7 @@ export default function NotificationsScreen() {
     );
 
     responseListener.current = Notifications.addNotificationResponseReceivedListener(
-      response => console.log(response)
+      response => setBodyNotification(response)
     );
 
     return () => {
@@ -98,21 +98,17 @@ const registerForPushNotificationsAsync = async () => {
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
     let finalStatus = existingStatus;
 
-    console.log(existingStatus);
-
     if (existingStatus !== 'granted') {
       const { status } = await Notifications.requestPermissionsAsync();
       finalStatus = status;
     }
 
     if (existingStatus === 'granted') {
-      //alert('Notification Failed');
+      // alert('Notification Failed');
       return;
     }
 
     token = (await Notifications.getExpoPushTokenAsync()).data;
-    console.log('token da notificação: ', token);
-    console.log('status do device: ', finalStatus);
 
   } else {
     alert('Use a physical device to view');

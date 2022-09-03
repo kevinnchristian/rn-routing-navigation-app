@@ -2,7 +2,6 @@ import {
   View,
   Button,
 } from 'react-native';
-
 import { useNavigation } from '@react-navigation/native';
 
 import styles from './style';
@@ -23,11 +22,15 @@ export default function HomeScreen() {
       />
       <Button
         title='Camera'
-        onPress={() => handleScreen('CameraScreen')}
+        onPress={() => handleScreen('Camera')}
       />
       <Button
         title='Maps'
         onPress={() => handleScreen('Maps')}
+      />
+      <Button
+        title='Notification'
+        onPress={() => handleScreen('Notifications')}
       />
     </View>
   );

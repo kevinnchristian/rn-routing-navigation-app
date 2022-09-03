@@ -8,21 +8,30 @@ import NotificationsScreen from '../screens/notifications';
 
 const { Navigator, Screen } = createStackNavigator();
 
-export default function Routes() {
+export default function DrawerNavigation() {
   return (
     <NavigationContainer>
       <Navigator
         screenOptions={{
           headerShown: true,
-          cardStyle: {
-            backgroundColor: '#e0e0e0',
-          },
         }}
       >
-        <Screen name='Home' component={HomeScreen} />
-        <Screen name='Camera' component={CameraScreen} />
-        <Screen name='Maps' component={MapsScreen} />
-        <Screen name='Notifications' component={NotificationsScreen} />
+        <Screen
+          name="Home"
+          component={HomeScreen}
+        />
+        <Screen
+          name="Camera"
+          component={CameraScreen}
+        />
+        <Screen
+          name="Maps"
+          component={MapsScreen}
+        />
+        <Screen
+          name="Notifications"
+          component={NotificationsScreen}
+        />
       </Navigator>
     </NavigationContainer>
   );

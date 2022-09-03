@@ -5,10 +5,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import HomeScreen from './screens/home';
-import CameraScreen from './screens/camera';
-import MapsScreen from './screens/maps';
-import NotificationsScreen from './screens/notifications';
+import HomeScreen from '../screens/home';
+import CameraScreen from '../screens/camera';
+import MapsScreen from '../screens/maps';
+import NotificationsScreen from '../screens/notifications';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
@@ -36,7 +36,7 @@ export default function DrawerNavigation() {
         />
 
         <Drawer.Screen
-          name='Notification'
+          name='Notifications'
           component={NotificationsScreen}
         />
       </Drawer.Navigator>
