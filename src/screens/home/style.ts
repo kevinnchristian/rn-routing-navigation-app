@@ -2,9 +2,9 @@ import { StyleSheet, Dimensions } from "react-native";
 
 export default StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'flex-start',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    alignItems: 'center',
     height: '100%',
     width: '100%',
     paddingHorizontal: 0.5,

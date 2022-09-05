@@ -6,6 +6,7 @@ import HomeScreen from '../screens/home';
 import CameraScreen from '../screens/camera';
 import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
+import SlideAnimationScreen from '../screens/slideAnimation';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -72,6 +73,21 @@ export default function BottomNavigation() {
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons
                 name='circle-notifications'
+                color={color}
+                size={size}
+              />
+            )
+          }}
+        />
+
+        <Tab.Screen
+          name='Slide Animation'
+          component={SlideAnimationScreen}
+          options={{
+            tabBarLabel: 'Notifications',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons
+                name='animation'
                 color={color}
                 size={size}
               />

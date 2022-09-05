@@ -9,6 +9,7 @@ import HomeScreen from '../screens/home';
 import CameraScreen from '../screens/camera';
 import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
+import SlideAnimationScreen from '../screens/slideAnimation';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
@@ -38,6 +39,11 @@ export default function DrawerNavigation() {
         <Drawer.Screen
           name='Notifications'
           component={NotificationsScreen}
+        />
+
+        <Drawer.Screen
+          name='Slide Animation'
+          component={SlideAnimationScreen}
         />
       </Drawer.Navigator>
     </NavigationContainer>
