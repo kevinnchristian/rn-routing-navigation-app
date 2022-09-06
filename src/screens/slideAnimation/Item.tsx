@@ -81,7 +81,7 @@ export default Item;
 
 const { height, width } = Dimensions.get('window');
 export const MIN_HEIGHT = 128;
-export const MAX_HEIGHT = height * 0.7;
+export const MAX_HEIGHT = height * 0.935;
 
 const styles = StyleSheet.create({
   container: {

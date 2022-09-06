@@ -1,32 +1,26 @@
 export const itens = [
   {
-    title: 'GTR 35',
-    subtitle: 'Nismo',
-    picture: require('../../assets/images/gtr35_nismo.png'),
-    top: 0,
+    title: 'Dart Vader',
+    subtitle: "Lord Sith",
+    picture: require('../../assets/images/vader.png'),
+    top: 0
   },
   {
-    title: 'GTR 35',
-    subtitle: 'Nismo',
-    picture: require('../../assets/images/gtr35_nismo.png'),
-    top: 0,
+    title: 'Yoda',
+    subtitle: "Master Jedi",
+    picture: require('../../assets/images/yoda.png'),
+    top: 0
   },
   {
-    title: 'GTR 35',
-    subtitle: 'Nismo',
-    picture: require('../../assets/images/gtr35_nismo.png'),
-    top: 0,
+    title: 'Kyle Ren',
+    subtitle: "Sith",
+    picture: require('../../assets/images/kyle.png'),
+    top: 0
   },
   {
-    title: 'GTR 35',
-    subtitle: 'Nismo',
-    picture: require('../../assets/images/gtr35_nismo.png'),
-    top: 0,
+    title: 'Obi-Wan Kenobi',
+    subtitle: "Master Jedi",
+    picture: require('../../assets/images/obiwan.png'),
+    top: 0
   },
-  {
-    title: 'GTR 35',
-    subtitle: 'Nismo',
-    picture: require('../../assets/images/gtr35_nismo.png'),
-    top: 0,
-  }
 ]
