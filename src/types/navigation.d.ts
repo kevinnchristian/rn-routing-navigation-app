@@ -5,6 +5,8 @@ export declare global {
       CameraScreen: undefined;
       MapsScreen: undefined;
       NotificationsScreen: undefined;
+      SlideAnimationScreen: undefined;
+      SlideHorizontalAnimationScreen: undefined;
     }
   }
 } 

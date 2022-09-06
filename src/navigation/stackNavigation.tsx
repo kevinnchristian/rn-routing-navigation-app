@@ -6,6 +6,7 @@ import CameraScreen from '../screens/camera';
 import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
+import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -36,6 +37,10 @@ export default function DrawerNavigation() {
         <Screen
           name="Slide Animation"
           component={SlideAnimationScreen}
+        />
+        <Screen
+          name="Slide Horizontal Animation"
+          component={SlideHorizontalAnimationScreen}
         />
       </Navigator>
     </NavigationContainer>

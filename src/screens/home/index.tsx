@@ -36,6 +36,10 @@ export default function HomeScreen() {
         title='Slide Animation'
         onPress={() => handleScreen('Slide Animation')}
       />
+      <Button
+        title='Slide Horizontal Animation'
+        onPress={() => handleScreen('Slide Horizontal Animation')}
+      />
     </View>
   );
 }

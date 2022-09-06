@@ -10,6 +10,7 @@ import CameraScreen from '../screens/camera';
 import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
+import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
@@ -44,6 +45,11 @@ export default function DrawerNavigation() {
         <Drawer.Screen
           name='Slide Animation'
           component={SlideAnimationScreen}
+        />
+
+        <Drawer.Screen
+          name='Slide Horizontal Animation'
+          component={SlideHorizontalAnimationScreen}
         />
       </Drawer.Navigator>
     </NavigationContainer>

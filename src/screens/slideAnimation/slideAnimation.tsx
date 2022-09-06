@@ -7,7 +7,7 @@ import Animated, {
 import Item, { MAX_HEIGHT } from './Item';
 import { itens } from './Model';
 
-export default function SlideAnimation() {
+export default function SlideAnimationScreen() {
   const y = useSharedValue(0);
   const onScroll = useAnimatedScrollHandler({
     onScroll: (e) => {

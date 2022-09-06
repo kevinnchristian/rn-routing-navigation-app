@@ -5,7 +5,8 @@ import HomeScreen from '../screens/home';
 import CameraScreen from '../screens/camera';
 import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
-import SlideAnimationScreen from '../screens/slideAnimation';
+import SlideAnimationScreen from '../screens/slideAnimation/slideAnimation';
+import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -25,6 +26,9 @@ export default function Routes() {
         <Screen name='Maps' component={MapsScreen} />
         <Screen name='Notifications' component={NotificationsScreen} />
         <Screen name='Slide Animation' component={SlideAnimationScreen} />
+        <Screen name='Slide Horizontal Animation'
+          component={SlideHorizontalAnimationScreen}
+        />
       </Navigator>
     </NavigationContainer>
   );
