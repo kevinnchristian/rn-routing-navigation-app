@@ -4,6 +4,7 @@ export interface IProduct {
   color1: string;
   color2: string;
   picture: string;
+  ratio: number;
 }
 
 export const products = [
@@ -13,6 +14,7 @@ export const products = [
     color1: '#F9AC8A',
     color2: '#FBC6AE',
     picture: require('../../assets/images/hamburguer1.png'),
+    ratio: 1
   },
   {
     title: 'Hamburgue B',
@@ -20,6 +22,7 @@ export const products = [
     color1: '#4DD2A5',
     color2: '#63D8B0',
     picture: require('../../assets/images/hamburguer2.png'),
+    ratio: 1
   },
   {
     title: 'Hamburgue C',
@@ -27,6 +30,7 @@ export const products = [
     color1: '#FEB829',
     color2: '#FDD446',
     picture: require('../../assets/images/hamburguer3.png'),
+    ratio: 1
   },
   {
     title: 'Hamburgue D',
@@ -34,5 +38,6 @@ export const products = [
     color1: '#F9AC8A',
     color2: '#FBC6AE',
     picture: require('../../assets/images/hamburguer4.png'),
+    ratio: 757 / 735
   },
 ]

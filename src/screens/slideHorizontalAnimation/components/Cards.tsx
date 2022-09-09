@@ -6,7 +6,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-const { height, width } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 export const cards = [
   {
@@ -35,11 +35,20 @@ interface CardProps {
 const Card = ({ picture, caption }: CardProps) => {
   return (
     <>
-      <View>
-        <Image source={picture} />
+      <View style={styles.container}>
+        <Image
+          source={picture}
+          style={styles.image}
+        />
       </View>
-      <View>
-        <Text>{caption}</Text>
+      <View
+        style={styles.caption}
+      >
+        <Text
+          style={styles.text}
+        >
+          {caption}
+        </Text>
       </View>
     </>
   )
@@ -48,9 +57,43 @@ const Card = ({ picture, caption }: CardProps) => {
 const Cards = () => {
   return (
     <View>
-      <Text>Cards</Text>
+      {cards?.map(({ picture, caption }, index) => (
+        <Card
+          key={index}
+          picture={picture}
+          caption={caption}
+        />
+      ))}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 16,
+    marginHorizontal: 12,
+    height: width,
+  },
+  image: {
+    ...StyleSheet.absoluteFillObject,
+    height: undefined,
+    width: undefined,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+  },
+  caption: {
+    backgroundColor: '#F4F4F6',
+    borderBottomLeftRadius: 16,
+    borderBottomRightRadius: 16,
+    marginHorizontal: 24,
+    marginBottom: 16,
+    padding: 24,
+  },
+  text: {
+    color: '#432406',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+});
 
 export default Cards;
