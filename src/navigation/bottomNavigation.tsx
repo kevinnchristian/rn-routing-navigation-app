@@ -8,6 +8,7 @@ import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
 import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
+import DragEffect from '../screens/dragEffects';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -101,6 +102,21 @@ export default function BottomNavigation() {
           component={SlideHorizontalAnimationScreen}
           options={{
             tabBarLabel: 'Horizontal Animation',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons
+                name='animation'
+                color={color}
+                size={size}
+              />
+            )
+          }}
+        />
+
+        <Tab.Screen
+          name='Drag Effect'
+          component={DragEffect}
+          options={{
+            tabBarLabel: 'Drag Effect',
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons
                 name='animation'

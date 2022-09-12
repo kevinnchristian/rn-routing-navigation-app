@@ -11,6 +11,7 @@ import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
 import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
+import DragEffect from '../screens/dragEffects';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
@@ -50,6 +51,11 @@ export default function DrawerNavigation() {
         <Drawer.Screen
           name='Slide Horizontal Animation'
           component={SlideHorizontalAnimationScreen}
+        />
+
+        <Drawer.Screen
+          name='Drag Effect'
+          component={DragEffect}
         />
       </Drawer.Navigator>
     </NavigationContainer>
