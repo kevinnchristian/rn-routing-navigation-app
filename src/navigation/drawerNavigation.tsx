@@ -12,6 +12,7 @@ import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
 import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
 import DragEffect from '../screens/dragEffects';
+import BreatheScreen from '../screens/breathe';
 
 export default function DrawerNavigation() {
   const Drawer = createDrawerNavigator();
@@ -56,6 +57,11 @@ export default function DrawerNavigation() {
         <Drawer.Screen
           name='Drag Effect'
           component={DragEffect}
+        />
+
+        <Drawer.Screen
+          name='Breathe Effect'
+          component={BreatheScreen}
         />
       </Drawer.Navigator>
     </NavigationContainer>
