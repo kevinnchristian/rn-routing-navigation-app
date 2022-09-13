@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
 import Animated, {
   useAnimatedRef,
   useAnimatedScrollHandler,

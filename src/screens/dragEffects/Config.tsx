@@ -21,7 +21,7 @@ export const getPosition = (order: number) => {
   'worklet'
 
   return {
-    x: (order % COLUMN),
+    x: (order % COLUMN) * SIZE,
     y: Math.floor(order / COLUMN) * SIZE,
   }
 }

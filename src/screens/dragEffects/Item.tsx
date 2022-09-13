@@ -6,7 +6,6 @@ import {
   StyleSheet
 } from 'react-native';
 import Animated, {
-  scrollTo,
   useAnimatedGestureHandler,
   useAnimatedReaction,
   useAnimatedStyle,
@@ -94,7 +93,7 @@ const Item = ({
     },
     onEnd: () => {
       isGestureActive.value = false;
-      const postion = getPosition(positions.value[id]);
+      const position = getPosition(positions.value[id]);
       translateX.value = withTiming(position.x, animationConfig);
       translateY.value = withTiming(position.y, animationConfig);
     },

@@ -1,6 +1,5 @@
 import {
   View,
-  Text,
   StyleSheet
 } from 'react-native';
 import { WebView } from 'react-native-webview';
@@ -34,12 +33,10 @@ const styles = StyleSheet.create({
   container: {
     height: SIZE,
     width: SIZE,
-    borderRadius: MARGIN,
     overflow: 'hidden',
   },
   cardWebView: {
     flex: 1,
-    width: '100%',
     margin: MARGIN * 2,
   }
 });

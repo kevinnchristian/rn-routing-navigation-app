@@ -7,6 +7,8 @@ export declare global {
       NotificationsScreen: undefined;
       SlideAnimationScreen: undefined;
       SlideHorizontalAnimationScreen: undefined;
+      DragEffect: undefined;
+      BreatheEffect: undefined;
     }
   }
-} 
+}
