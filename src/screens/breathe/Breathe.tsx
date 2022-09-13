@@ -14,7 +14,7 @@ import { mix } from 'react-native-redash';
 
 import Circle from './Circle';
 
-const BreatheScreen = () => {
+const BreatheEffect = () => {
   const progress = useSharedValue(0);
   const goesDown = useSharedValue(false);
 
@@ -64,4 +64,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BreatheScreen;
+export default BreatheEffect;

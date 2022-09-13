@@ -7,6 +7,8 @@ import MapsScreen from '../screens/maps';
 import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation/slideAnimation';
 import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
+import DragEffect from '../screens/dragEffects/dragEffect';
+import BreatheEffect from '../screens/breathe/Breathe';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -29,6 +31,8 @@ export default function Routes() {
         <Screen name='Slide Horizontal Animation'
           component={SlideHorizontalAnimationScreen}
         />
+        <Screen name='Drag Effect' component={DragEffect} />
+        <Screen name='Breathe Effect' component={BreatheEffect} />
       </Navigator>
     </NavigationContainer>
   );

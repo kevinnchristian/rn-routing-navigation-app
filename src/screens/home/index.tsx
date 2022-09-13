@@ -40,6 +40,14 @@ export default function HomeScreen() {
         title='Slide Horizontal Animation'
         onPress={() => handleScreen('Slide Horizontal Animation')}
       />
+      <Button
+        title='Drag Effect'
+        onPress={() => handleScreen('Drag Effect')}
+      />
+      <Button
+        title='Breathe Effect'
+        onPress={() => handleScreen('Breathe Effect')}
+      />
     </View>
   );
 }

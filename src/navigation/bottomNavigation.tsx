@@ -9,6 +9,7 @@ import NotificationsScreen from '../screens/notifications';
 import SlideAnimationScreen from '../screens/slideAnimation';
 import SlideHorizontalAnimationScreen from '../screens/slideHorizontalAnimation';
 import DragEffect from '../screens/dragEffects';
+import BreatheEffect from '../screens/breathe/Breathe';
 
 export default function BottomNavigation() {
   const Tab = createBottomTabNavigator();
@@ -117,6 +118,21 @@ export default function BottomNavigation() {
           component={DragEffect}
           options={{
             tabBarLabel: 'Drag Effect',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons
+                name='animation'
+                color={color}
+                size={size}
+              />
+            )
+          }}
+        />
+
+        <Tab.Screen
+          name='Breathe Effect'
+          component={BreatheEffect}
+          options={{
+            tabBarLabel: 'Breathe Effect',
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons
                 name='animation'
